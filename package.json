@@ -1,0 +1,18 @@
+{
+  "name": "ADD_YOUR_PROJECT_NAME",
+  "version": "1.0.0",
+  "description": "ADD description",
+  "scripts": {
+    "start": "cd ./backend && npm start",
+    "build": "cd ./frontend && npm run build",
+    "publish": "concurrently \"npm build\" \"npm start\"",
+    "dev": "concurrently \"nodemon ./backend/bin/www\" \"cd frontend && npm run serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chanki",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
